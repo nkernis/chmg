@@ -1,0 +1,56 @@
+{
+  "name": "chmg",
+  "description": "CLI tool to change images to how I want'em.",
+  "version": "0.0.0",
+  "author": "GENERIC_ERROR",
+  "bin": {
+    "chmg": "./bin/run"
+  },
+  "bugs": "https://github.com/nkernis/chmg/issues",
+  "dependencies": {
+    "@jimp/plugin-threshold": "^0.6.4",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "dateformat": "^3.0.3",
+    "esm": "^3.2.25",
+    "jimp": "^0.6.4",
+    "ora": "^3.4.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "globby": "^8"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/nkernis/chmg",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "chmg",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "nkernis/chmg",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
