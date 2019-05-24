@@ -34,53 +34,62 @@ USAGE
 
 ## `chmg bw`
 
-Describe the command here
-
 ```
+Make an image black and white
+
 USAGE
   $ chmg bw
 
 OPTIONS
-  -n, --name=name  name to print
+  -i, --image=image          (required) the image file to import
+  -t, --threshold=threshold  apply threshold to image (0 - 255)
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  Makes an image black and white by applying a threshold to it
+
+  The process makes the image look "scanned"
 ```
 
 _See code: [src/commands/bw.js](https://github.com/nkernis/chmg/blob/v0.0.0/src/commands/bw.js)_
 
 ## `chmg color`
 
-Describe the command here
-
 ```
+Manipulate an images color
+
 USAGE
   $ chmg color
 
 OPTIONS
-  -n, --name=name  name to print
+  -c, --color=color        color (hex) to use for "xor"
+  -i, --image=image        (required) the image file to import
+  -s, --saturate=saturate  saturate the color a given amount (0 - 100)
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  saturate:
+     - saturates an image (saturation is used to describe the intensity of the color an image)
+
+  xor:
+     - treats the two colors as bitfields and applies an XOR operation to the red, green, and blue components
 ```
 
 _See code: [src/commands/color.js](https://github.com/nkernis/chmg/blob/v0.0.0/src/commands/color.js)_
 
 ## `chmg help [COMMAND]`
 
-display help for chmg
-
 ```
+CLI tool to change images to how I want'em.
+
+VERSION
+  chmg/0.0.0 darwin-x64 node-v10.14.1
+
 USAGE
-  $ chmg help [COMMAND]
+  $ chmg [COMMAND]
 
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
+COMMANDS
+  bw     Make an image black and white
+  color  Manipulate an images color
+  help   display help for chmg
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
