@@ -78,7 +78,7 @@ _See code: [src/commands/color.js](https://github.com/nkernis/chmg/blob/v0.0.0/s
 ## `chmg help [COMMAND]`
 
 ```
-CLI tool to change images to how I want'em.
+CLI tool to change images to how I want'em
 
 VERSION
   chmg/0.0.0 darwin-x64 node-v10.14.1

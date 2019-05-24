@@ -1,6 +1,6 @@
 {
   "name": "chmg",
-  "description": "CLI tool to change images to how I want'em.",
+  "description": "CLI tool to change images to how I want'em",
   "version": "0.0.0",
   "author": "GENERIC_ERROR",
   "bin": {
