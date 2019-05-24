@@ -9,6 +9,7 @@
   "bugs": "https://github.com/nkernis/chmg/issues",
   "dependencies": {
     "@jimp/plugin-threshold": "^0.6.4",
+    "@jimp/plugin-threshold": "^0.6.4",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
