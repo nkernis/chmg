@@ -9,14 +9,11 @@ CLI tool to change images to how I want&#39;em.
 [![License](https://img.shields.io/npm/l/chmg.svg)](https://github.com/nkernis/chmg/blob/master/package.json)
 
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 * [Usage](#usage)
 * [Commands](#commands)
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 # Usage
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 ```sh-session
 $ npm install -g chmg
 $ chmg COMMAND
@@ -29,10 +26,8 @@ USAGE
 ...
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 # Commands
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 * [`chmg bw`](#chmg-bw)
 * [`chmg color`](#chmg-color)
 * [`chmg help [COMMAND]`](#chmg-help-command)
